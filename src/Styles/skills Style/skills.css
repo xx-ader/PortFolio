@@ -1,0 +1,64 @@
+.skills{
+    height: 60vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skills h1{
+    color: darkgray;
+    font-family: RussoOne!important;
+  }
+.divs{
+    height:70%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.divs div{
+    width: 30%;
+    height: 55px;
+    text-align: center;
+    background-color: transparent;
+    border: 1px solid black;
+    box-shadow:  5px 5px 15px 0px black;
+    overflow: hidden;
+    transition: height 0.5s ease-in;
+
+}
+.divs div img{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.divs div h3{
+    padding: 10px 20px;
+    font-size: 2.2vw;
+    color: darkgrey;
+    background-color: green;
+}
+.col-4:hover{
+    height: 200px;
+}
+.divs div ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.divs div ul li{
+    margin: 5px;
+    text-align: justify;
+    color: lightgray;
+}
+
+
+
+@media (max-width:800px){
+    .divs{
+        flex-direction: column;
+    }
+}

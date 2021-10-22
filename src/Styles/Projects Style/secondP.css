@@ -1,0 +1,56 @@
+.project2{
+    width: 50%;
+    margin: 20% auto;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.project2 h1{
+    color: white;
+  }
+  .project2 p{
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+  
+  }
+  .project2 span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .project2 span button{
+    padding: 5px 7px;
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    color : white;
+    border-radius: 5px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 1px grey;
+  }
+  .project2 span a:hover{
+  
+  }
+  #decrease{
+    background-color: red;
+  }
+  #reset{
+    background-color: blue;
+  }
+  #increase{
+    background-color: green;
+  }
+
+
+  @media (max-width:500px){
+    .project2 span{
+      flex-direction: column;
+      
+    }
+  }

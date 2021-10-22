@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+.app> h1,h2,h3,h4,h5,h6{
+  font-family: RussoOne!important;
+  color: rgb(194, 194, 194);
+}
+.app{
+  background-color: #07161e;
+}
+html{
+  background-color: #07161e;
+}
+@font-face{
+  font-family: "Lobster";
+  src: url('../src/Styles/Fonts/Lobster-Regular.ttf');
+}
+@font-face{
+  font-family: 'Changa';
+  src: url('../src/Styles/Fonts/Changa-VariableFont_wght.ttf');
+}
+@font-face{
+  font-family: 'RussoOne';
+  src:url('../src/Styles/Fonts/RussoOne-Regular.ttf');
+}
+
+/* manipulation du scroll par section 
+
+.sec{
+  height: 100vh;
+  scroll-snap-align: start;
+}
+.section1{
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+*/

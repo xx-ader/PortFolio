@@ -1,0 +1,58 @@
+.topBody{
+    width: 100%;
+    height:600px;
+    display: flex;
+    align-items: center;
+    transition: all 0.8s ease;
+    justify-content: space-around;
+    background-color: #07161e;
+    color: white;
+}
+
+.pic {
+    border-radius: 50%;
+    max-width: 40%;
+    transform: translateX(-120%);
+    transition: transform 1s ease;
+}
+
+
+
+.description{
+    width: 45%;
+    height: auto;
+    display: flex;
+    border-radius: 200px;
+    padding: 15px 30px;
+    font-size: 1vw;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    transform: translateX(120%);
+    transition: transform 1s ease;
+}
+.description h1{
+    font-family: RussoOne;
+}
+.about{
+    border: none;
+    padding: 5px 10px;
+    color :white;
+    background-color: black;
+}
+
+.showTopBody{
+    transform: translateX(0);
+}
+
+
+@media (max-width:500px){
+    .topBody{
+        flex-direction: column-reverse;
+       
+    }
+    .activeMargin{
+       
+    }
+}

@@ -1,0 +1,61 @@
+.middleBody{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.title{
+    text-align: center;
+    margin-top: 20px;
+}
+.middleBody .divOff{
+    width: 10%;
+    height: 80%;
+    background-color: rgb(41, 131, 101);
+    border-radius: 50px;
+    
+    cursor: pointer;
+    transform: translateX(-1100%);
+    transition: all 0.8s ease;
+   
+}
+
+
+.middleBody .activeProject{
+    width: 55%;
+    cursor: initial;
+}
+
+/** manipulation du titre projet **/ 
+.project_title{
+    font-size: 2.5vw;
+    text-align: center;
+    transform: rotate(90deg);
+    margin-top: 200px;
+    transition: all 0.8s ease;
+}
+.activeProject_title{
+    transform: rotate(0deg);
+    margin-top: 20px;
+}
+
+/** manipulation du contenue du projet (hide and show)**/
+.compoContainer{
+    display: none;
+}
+.activeCompoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media (max-width:500px){
+    
+    .middleBody .divOff{
+        height: 45%;
+    }
+}

@@ -1,0 +1,48 @@
+.project3{
+    width: 50%;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+flex-wrap: wrap;
+    gap: 3px;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.square{
+    width: 8px;
+    height: 8px;
+    border-radius: 1px;
+    box-shadow: 0px 0px 1px 1px rgb(189, 189, 189);
+    background-color: rgb(255, 255, 255);
+    transition:  2.5s ease;
+}
+.square:hover{
+    transition-duration: 0s;
+}
+
+@media (max-width:992px){
+    .project3{
+        gap: 2px;
+    }
+    .square{
+        width: 6px;
+        height: 6px;
+    }
+    }
+    @media (max-width : 500px){
+        .project3{
+            gap: 1px;
+        }
+        .square{
+            width: 4px;
+            height: 4px;
+        }
+    }
+    @media (max-width : 360px){
+        .square{
+            width: 3px;
+            height: 3px;
+        }
+    }
