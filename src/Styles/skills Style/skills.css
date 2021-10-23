@@ -1,28 +1,30 @@
 .skills{
     height: 60vh;
-    width: 80%;
+    width: 100%;
     margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 .skills h1{
-    color: darkgray;
-    font-family: RussoOne!important;
+    color: rgba(9,49,67,1);
+    font-family: Changa!important;
+    text-align: center;
   }
 .divs{
     height:70%;
     width: 100%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
 }
 .divs div{
-    width: 30%;
-    height: 55px;
+    width: 50%;
+    height: 45px;
     text-align: center;
     background-color: transparent;
-    border: 1px solid black;
+    border: 1px solid darkgrey;
     box-shadow:  5px 5px 15px 0px black;
     overflow: hidden;
     transition: height 0.5s ease-in;
@@ -34,22 +36,24 @@
     margin-right: 10px;
 }
 .divs div h3{
+    width: 100%;
     padding: 10px 20px;
-    font-size: 2.2vw;
+    font-size: 20px;
     color: darkgrey;
-    background-color: green;
+    background-color: rgba(9,49,67,1);
 }
 .col-4:hover{
-    height: 200px;
+    height: 100px;
 }
 .divs div ul{
+    width: 100%;
     display: flex;
-    flex-direction: column;
     list-style: none;
     transition: opacity 0.3s ease-in-out;
 }
 
 .divs div ul li{
+    width: 100%;
     margin: 5px;
     text-align: justify;
     color: lightgray;
@@ -58,7 +62,13 @@
 
 
 @media (max-width:800px){
-    .divs{
+    .divs div ul {
         flex-direction: column;
+    }
+    .divs div{
+        width: 100%;
+    }
+    .col-4:hover{
+        height : 170px;
     }
 }

@@ -1,12 +1,12 @@
 .navBar {
     display: flex;
     font-family: Changa;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 .anim_a{
     width: 100%;
     height: 5%;
-    background-color: aliceblue;
+    background-color: rgba(49,140,167,1);
     position: absolute;
     top: 0;
     left: 0;
@@ -16,12 +16,12 @@
     position: relative;
     text-align: center;
     text-decoration: none;
-    color: white;
-    background-color: black;
+    color: rgba(49,140,167,1);
+    background-color: rgba(9,49,67,1);
     border-radius: 2px;
 }
 .navBar a:hover{
-    color : black;
+    color : rgba(9,49,67,1);
 }
 .navBar a:hover .anim_a{
     height: 95%;

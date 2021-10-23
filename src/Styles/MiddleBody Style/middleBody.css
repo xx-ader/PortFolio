@@ -1,8 +1,14 @@
-.middleBody{
+.projects{
     height: 100vh;
     display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.middleBody{
+    height: 80%;
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     
 }
 .title{
@@ -11,29 +17,30 @@
 }
 .middleBody .divOff{
     width: 10%;
-    height: 80%;
-    background-color: rgb(41, 131, 101);
+    height: 100%;
+    background-color: rgba(9,49,67,1);
     border-radius: 50px;
-    
     cursor: pointer;
     transform: translateX(-1100%);
     transition: all 0.8s ease;
-   
 }
 
 
 .middleBody .activeProject{
     width: 55%;
     cursor: initial;
+    overflow: hidden;
 }
 
 /** manipulation du titre projet **/ 
 .project_title{
-    font-size: 2.5vw;
+    font-size: 30px;
     text-align: center;
+    font-weight: 900;
     transform: rotate(90deg);
     margin-top: 200px;
     transition: all 0.8s ease;
+    color: rgba(49,140,167,1);
 }
 .activeProject_title{
     transform: rotate(0deg);
@@ -56,6 +63,9 @@
 @media (max-width:500px){
     
     .middleBody .divOff{
-        height: 45%;
+        height: 60%;
+    }
+    .project_title{
+        font-size: 10px;
     }
 }

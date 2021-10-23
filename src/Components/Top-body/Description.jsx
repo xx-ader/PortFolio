@@ -4,13 +4,11 @@ export const Description = () => {
     return (
         <>
         <div className="description">
-            <h1>Description HEEEEEEEEERE</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor, 
-                 quam? Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                 Hic nesciunt earum eaque atque vel, impedit pariatur! Debitis aliquid atque voluptas 
-                 labore enim animi.Lorem ipsum dolor sit amet consectetur,
-                 adipisicing elit. <button className='about'>about me</button> Aperiam, voluptates.</p>
+            <h1>Hi !</h1>
+            <h3>I'm Reda ElMhamdi</h3>
+            <p>Fascinated by Front-end developpement,
+                I like to replicate templates and program simple applications.
+                Dont hesitate to <button className='about'>Contact</button> me.</p>
         </div>
         </>
     )

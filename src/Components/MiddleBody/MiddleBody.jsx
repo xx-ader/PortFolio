@@ -62,6 +62,8 @@ window.addEventListener('scroll',()=>{
 
         <>
         <hr />
+        <div className="projects">
+        
         <h1 className='title'>JavaScript Mini-Projects</h1>
             <div className="container middleBody">
                 {slideArray.map((element,idx)=>{
@@ -89,6 +91,8 @@ return(
 
                 })}
                    
+            </div>
+            
             </div>
             <hr />
         </>

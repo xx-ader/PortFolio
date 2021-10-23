@@ -13,6 +13,7 @@ const Skills = () => {
         <div className="skills container">
         
             <h1>My technical competencies</h1>
+
             <div className="divs">
             <div className="design col-4">
             <h3>Design</h3>
@@ -20,7 +21,6 @@ const Skills = () => {
             <li><img src={css}  alt=''/>CSS 3</li>
             <li><img src={boot}  alt=''/>BOOTSTRAP</li>
             </ul>
-            
             </div>
 
             <div className="language col-4">

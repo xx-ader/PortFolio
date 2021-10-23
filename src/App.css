@@ -4,14 +4,14 @@
   
 }
 .app> h1,h2,h3,h4,h5,h6{
-  font-family: RussoOne!important;
-  color: rgb(194, 194, 194);
+  font-family: Changa!important;
+  color: rgba(9,49,67,1);
 }
 .app{
-  background-color: #07161e;
+  background-color: rgba(49,140,167,1);
 }
 html{
-  background-color: #07161e;
+  background-color: rgba(49,140,167,1);
 }
 @font-face{
   font-family: "Lobster";
