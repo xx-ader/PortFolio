@@ -47,7 +47,7 @@ window.addEventListener('scroll',()=>{
     let divOffEl = document.querySelectorAll('.divOff')
     let scrolled = window.scrollY
 
-    if(scrolled > 680){
+    if(scrolled > 1000){
         divOffEl.forEach((div,idx)=>{
             
           div.style.transform = 'translateX(0)'
@@ -61,7 +61,6 @@ window.addEventListener('scroll',()=>{
     return (
 
         <>
-        <hr />
         <div className="projects">
         
         <h1 className='title'>JavaScript Mini-Projects</h1>
@@ -94,7 +93,6 @@ return(
             </div>
             
             </div>
-            <hr />
         </>
     )
 }

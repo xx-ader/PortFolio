@@ -1,50 +1,64 @@
 .skills{
-    height: 60vh;
+    height: 100vh;
     width: 100%;
     margin: auto;
     display: flex;
-    align-items: center;
+    align-items: ;
     flex-direction: column;
+    background-image: url(../../assets/bg-skills.jpg);
+    background-size: cover;
+    background-position: center center;
+    border-top: 1px solid #318ca7;
 }
 .skills h1{
     color: rgba(9,49,67,1);
     font-family: Changa!important;
-    text-align: center;
+    margin-left: 15%;
+    margin-top: 50px;
+    
   }
 .divs{
     height:70%;
-    width: 100%;
+    width: 40%;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-left: 13%;
 }
 .divs div{
-    width: 50%;
-    height: 45px;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     background-color: transparent;
-    border: 1px solid darkgrey;
-    box-shadow:  5px 5px 15px 0px black;
+    box-shadow:  5px 5px 15px 0px #696969;
     overflow: hidden;
     transition: height 0.5s ease-in;
-
+    position: relative;
+    padding: 5px 10px;
 }
 .divs div img{
-    width: 25px;
-    height: 25px;
-    margin-right: 10px;
+    width: 95%;
+    height: 95%;
+    opacity: 0.5;
+    position: absolute;
+    top: 5px;
+    left: 5px;
 }
 .divs div h3{
     width: 100%;
     padding: 10px 20px;
-    font-size: 20px;
-    color: darkgrey;
-    background-color: rgba(9,49,67,1);
+    font-size: 30px;
+    font-weight: 900;
+    color: rgba(9,49,67,1);
+   z-index: 5;
 }
-.col-4:hover{
-    height: 100px;
-}
+
 .divs div ul{
     width: 100%;
     display: flex;
@@ -61,14 +75,19 @@
 
 
 
-@media (max-width:800px){
-    .divs div ul {
-        flex-direction: column;
-    }
-    .divs div{
-        width: 100%;
-    }
-    .col-4:hover{
-        height : 170px;
-    }
+@media (max-width:500px){
+    
+  .divs{
+      flex-wrap: nowrap;
+      margin-left: 30%;
+  }
+  .divs div{
+      width: 150px;
+      height: 150px;
+  }
+  .divs div h3{
+      text-align: center;
+      padding: 0;
+      font-size: 25px;
+  }
 }

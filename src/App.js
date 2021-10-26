@@ -13,20 +13,27 @@ function App() {
     <>
     
     <div className='app'>
-   <Router>
+    <Header />
+    <Router>
+    <Route path="/" exact component={TopBody} />
+    <Route path="/" exact component={Skills} />
+    <Route path="/" exact component={MiddleBody} />
+    <Route path="/" exact component={Footer} />
+
+    </Router>
+
+
+    <Router>
        <Switch>
      <Route path="/contact" exact component={Contact} />
        </Switch>
-  </Router>
+      
+    </Router>
 
-     <Header />
+    
 
      
          
-     <TopBody />
-     <Skills />
-     <MiddleBody />
-     <Footer />
      
      
 

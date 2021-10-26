@@ -7,11 +7,9 @@
   font-family: Changa!important;
   color: rgba(9,49,67,1);
 }
-.app{
-  background-color: rgba(49,140,167,1);
-}
+
 html{
-  background-color: rgba(49,140,167,1);
+  overflow-x: hidden;
 }
 @font-face{
   font-family: "Lobster";
