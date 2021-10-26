@@ -1,18 +1,17 @@
 .footer{
+    border-top: 1px solid gray;
     background-color: #eaeaea;
 }
 h5{
     text-align: center;
     position: relative;
+    padding: 10px 0;
 }
 .heart{
-    transform: scale(1);
     position: absolute;
     color: red;
     transition: transform 0.5s ease;
     margin-left: 15px;
-
 }
 .heart_on{
-    transform: scale(2);
 }
