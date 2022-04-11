@@ -9,7 +9,7 @@ export const Header = () => {
 setTimeout(()=>{
       let header_generalEl = document.querySelector('.header_general')
       header_generalEl.classList.add('showHeader')
-}, 500)
+}, 1000)
 
     return (
         <>

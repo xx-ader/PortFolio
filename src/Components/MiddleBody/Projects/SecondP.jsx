@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../../Styles/Projects Style/secondP.css";
+import "../../../Styles/MiniProjects /secondP.css";
 
 export const SecondP = () => {
     const [number,setNumber] = useState(0)

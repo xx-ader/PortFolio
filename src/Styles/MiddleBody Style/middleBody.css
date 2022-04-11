@@ -1,13 +1,12 @@
 .projects{
-    height: 100vh;
+    height: 85vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #eaeaea;
     border-top: 1px solid #318ca7;
 }
 .middleBody{
-    height: 80%;
+    height: 90%;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -15,7 +14,6 @@
 }
 .title{
     text-align: center;
-    margin-top: 20px;
 }
 .middleBody .divOff{
     width: 10%;
@@ -23,7 +21,7 @@
     background-color: rgba(9,49,67,1);
     border-radius: 50px;
     cursor: pointer;
-    transform: translateX(-1100%);
+    /** transform: translateX(-1100%);**/
     transition: all 0.8s ease;
 }
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import '../../../Styles/Projects Style/fourthP.css'
+import '../../../Styles/MiniProjects /fourthP.css'
 import { colorsArray } from '../../../DATA/colorsArray'
 export const FourthP = () => {
 

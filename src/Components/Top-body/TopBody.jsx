@@ -9,7 +9,7 @@ setTimeout(()=>{
     let descriptionEl = document.querySelector('.description')
     imgEl.classList.add("showTopBody")
     descriptionEl.classList.add("showTopBody")
-},1000)
+},1500)
     return (
         <>
             <div className="topBody">

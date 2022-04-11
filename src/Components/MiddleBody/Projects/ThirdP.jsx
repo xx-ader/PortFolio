@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../../Styles/Projects Style/thirdP.css'
+import '../../../Styles/MiniProjects /thirdP.css'
 import { colorsArray,squaresNumber } from '../../../DATA/colorsArray'
 
 export const ThirdP = () => {

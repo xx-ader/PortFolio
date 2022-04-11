@@ -7,10 +7,14 @@
   font-family: Changa!important;
   color: rgba(9,49,67,1);
 }
-
+.app{
+  background:linear-gradient(180deg, rgba(49,140,167,1) 27%, rgba(193,220,228,1) 75%, rgba(238,238,238,1) 90%);
+}
 html{
   overflow-x: hidden;
+  
 }
+
 @font-face{
   font-family: "Lobster";
   src: url('../src/Styles/Fonts/Lobster-Regular.ttf');

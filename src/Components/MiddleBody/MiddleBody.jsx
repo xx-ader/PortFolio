@@ -47,7 +47,7 @@ window.addEventListener('scroll',()=>{
     let divOffEl = document.querySelectorAll('.divOff')
     let scrolled = window.scrollY
 
-    if(scrolled > 1000){
+    if(scrolled > 700){
         divOffEl.forEach((div,idx)=>{
             
           div.style.transform = 'translateX(0)'

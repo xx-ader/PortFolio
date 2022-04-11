@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import '../../../Styles/Projects Style/firstP.css'
+import '../../../Styles/MiniProjects /firstP.css'
 
 // decalage error d'une couleuur à regler 
 export const FirstP = () => {

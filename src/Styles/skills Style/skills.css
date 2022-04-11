@@ -28,20 +28,7 @@
     margin-top: 50px;
     margin-left: 13%;
 }
-.divs div{
-    width: 200px;
-    height: 200px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: transparent;
-    box-shadow:  5px 5px 15px 0px #696969;
-    overflow: hidden;
-    transition: height 0.5s ease-in;
-    position: relative;
-    padding: 5px 10px;
-}
+
 .divs div img{
     width: 95%;
     height: 95%;
@@ -53,10 +40,11 @@
 .divs div h3{
     width: 100%;
     padding: 10px 20px;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 900;
     color: rgba(9,49,67,1);
    z-index: 5;
+   transform: perspective(500px) translateZ(35px);
 }
 
 .divs div ul{
@@ -72,22 +60,112 @@
     text-align: justify;
     color: lightgray;
 }
+ /** working on flip card effect  */
 
+ .card{
+    width: 200px;
+    height: 200px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: transparent;
+     position: relative;
+     transform-style: preserve-3d;
+ }
+ .card .col-4{
+     width: 100%;
+     height: 100%;
+     padding: 5px 10px;
+     background-color: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: absolute;
+     box-shadow:  5px 5px 15px 0px #696969;
+     transform-style: preserve-3d;
+     backface-visibility: hidden;
+     transform: perspective(500px) rotateY(0deg);
+     transition: 0.8s ease-in-out;
+ }
 
+ .card:hover .col-4.front{
+    transform: perspective(500px) rotateY(180deg);
+ }
+ .card:hover .col-4.back{
+    transform: perspective(500px) rotateY(360deg);
+ }
+ .card .back{
+    background: rgb(233,233,233);
+background: linear-gradient(90deg, rgba(233,233,233,1) 45%, rgba(215,215,215,1) 55%);
+     transform: perspective(500px) rotateY(180deg);
+ }
+
+/** back animation pourcentage maitrise **/
+.back svg{
+    width: 150px;
+    height: 150px;
+    position: relative;
+}
+.back svg circle{
+    width: 150px;
+    height: 150px;
+    fill: none;
+    stroke-width: 10;
+    stroke: black;
+    transform: translate(5px,5px);
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+}
+.back svg circle:nth-child(1){
+    stroke-dashoffset: 0;
+    stroke: rgb(190, 190, 190);
+}
+.back svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 0)/100);
+    stroke: #318ca7;
+}
+.back h2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    position: absolute;
+    cursor: auto;
+}
+.percent {
+font-size: 20px;
+}
 
 @media (max-width:500px){
-    
+   .skills{
+       height: 150vh;
+   }
+   .card{
+       margin-bottom: 20px;
+   }
+   
   .divs{
+      width: 100%;
+      height: 80%;
+
       flex-wrap: nowrap;
-      margin-left: 30%;
+      flex-direction: column;
+      margin-left: 0;
+      align-items: center;
   }
-  .divs div{
-      width: 150px;
-      height: 150px;
-  }
+  
   .divs div h3{
       text-align: center;
       padding: 0;
       font-size: 25px;
   }
+  .skills h1{
+      text-align: center;
+      margin-left: 0;
+  }
+  
 }

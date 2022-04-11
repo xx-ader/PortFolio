@@ -1,4 +1,4 @@
-import '../../../Styles/Projects Style/fifthP.css'
+import '../../../Styles/MiniProjects /fifthP.css'
 
 export const FifthP = () => {
     
